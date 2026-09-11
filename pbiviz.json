@@ -1,0 +1,26 @@
+{
+  "visual": {
+    "name": "reisamPainelEmbalagem",
+    "displayName": "Painel de Embalagem Reisam",
+    "guid": "reisamPainelEmbalagemA088876835A4421B8CD7F88DCB439350",
+    "visualClassName": "Visual",
+    "version": "1.0.0.28",
+    "description": "Visual personalizado para acompanhamento do fluxo de pedidos da embalagem.",
+    "supportUrl": "https://www.microsoft.com",
+    "gitHubUrl": "https://github.com"
+  },
+  "apiVersion": "5.11.1",
+  "author": {
+    "name": "Vinicius Pereira",
+    "email": "vinicius@reisam.com.br"
+  },
+  "assets": {
+    "icon": "assets/icon.png"
+  },
+  "externalJS": null,
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": null,
+  "stringResources": [],
+  "version": "1.0.0.28"
+}

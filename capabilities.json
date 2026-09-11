@@ -1,0 +1,246 @@
+{
+  "dataRoles": [
+    {
+      "displayName": "Prioridade",
+      "name": "prioridade",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Cliente",
+      "name": "cliente",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Nº Pedido",
+      "name": "pedido",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Data Entrega",
+      "name": "entrega",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Ferramenta / Produto",
+      "name": "ferramenta",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "PROD",
+      "name": "PROD",
+      "kind": "Measure"
+    },
+    {
+      "displayName": "EMB",
+      "name": "EMB",
+      "kind": "Measure"
+    },
+    {
+      "displayName": "REJ",
+      "name": "REJ",
+      "kind": "Measure"
+    },
+    {
+      "displayName": "SD",
+      "name": "SD",
+      "kind": "Measure"
+    },
+    {
+      "displayName": "Rack",
+      "name": "rack",
+      "kind": "Grouping"
+    },
+    {
+      "displayName": "Etapa",
+      "name": "etapa",
+      "kind": "Grouping"
+    }
+  ],
+
+  "dataViewMappings": [
+    {
+      "table": {
+        "rows": {
+          "select": [
+            {
+              "for": {
+                "in": "prioridade"
+              }
+            },
+            {
+              "for": {
+                "in": "cliente"
+              }
+            },
+            {
+              "for": {
+                "in": "pedido"
+              }
+            },
+            {
+              "for": {
+                "in": "entrega"
+              }
+            },
+            {
+              "for": {
+                "in": "ferramenta"
+              }
+            },
+            {
+              "for": {
+                "in": "PROD"
+              }
+            },
+            {
+              "for": {
+                "in": "EMB"
+              }
+            },
+            {
+              "for": {
+                "in": "REJ"
+              }
+            },
+            {
+              "for": {
+                "in": "SD"
+              }
+            },
+            {
+              "for": {
+                "in": "rack"
+              }
+            },
+            {
+              "for": {
+                "in": "etapa"
+              }
+            }
+          ],
+          "dataReductionAlgorithm": {
+            "top": {
+              "count": 30000
+            }
+          }
+        }
+      }
+    }
+  ],
+
+  "objects": {
+      "dados": {
+          "properties": {
+              "fontSize": {
+                  "type": {
+                      "formatting": {
+                          "fontSize": true
+                      }
+                  }
+              },
+              "bold":{
+                  "type": {
+                      "bool": true
+                  }
+              }
+          }
+      },
+
+      "cabecalho":{
+          "properties": {
+              "fontSize":{
+                  "type": {
+                      "formatting": {
+                          "fontSize": true
+                      }
+                  }
+              },
+              "bold":{
+                  "type": {
+                      "bool": true
+                  }
+              } 
+          }
+      },
+      "prioridade":{
+          "properties": {
+              "fontSize":{
+                  "type": {
+                      "formatting": {
+                          "fontSize": true
+                      }
+                  }
+              },
+              "bold":{
+                  "type": {
+                      "bool": true
+                  }
+              }
+          }
+      },
+      "status":{
+          "properties": {
+              "fontSize":{
+                  "type": {
+                      "formatting": {
+                          "fontSize": true
+                      }
+                  }
+              },
+              "bold":{
+                  "type": {
+                      "bool": true
+                  }
+              }
+          }
+
+      },
+      "layout":{
+          "properties": {
+              "rowHeight":{
+                  "type": {
+                      "numeric": true
+                  }
+              },
+              "orderSpacing":{
+                  "type":{
+                      "numeric":true
+                  }
+              }
+          }
+      },
+      "colunas":{
+          "properties": {
+              "prioridade": { "type": { "numeric": true } },
+              "cliente": { "type": { "numeric": true } },
+              "pedido": { "type": { "numeric": true } },
+              "entrega": { "type": { "numeric": true } },
+              "ferramenta": { "type": { "numeric": true } },
+              "PROD": { "type": { "numeric": true } },
+              "EMB": { "type": { "numeric": true } },
+              "REJ": { "type": { "numeric": true } },
+              "SD": { "type": { "numeric": true } },
+              "rack": { "type": { "numeric": true } },
+              "producao": { "type": { "numeric": true } },
+              "forno": { "type": { "numeric": true } },
+              "embalagem": { "type": { "numeric": true } }
+          }
+      },
+      "numeros": {
+          "properties":{
+              "decimalPlaces": {
+                  "type":{
+                      "numeric":true
+                  }
+              },
+              "useGrouping": {
+                  "type":{
+                      "bool":true
+                  }
+              }
+          }
+      }
+  }, 
+
+  "privileges": []
+}
