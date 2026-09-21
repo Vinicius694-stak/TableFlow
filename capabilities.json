@@ -239,6 +239,89 @@
                   }
               }
           }
+      },
+      "textosCabecalho":{
+          "displayName": "Textos do cabeçalho",
+          "properties": {
+              "prioridade":{
+                  "displayName": "Prioridade",
+                  "type": {
+                      "text": true
+                  }
+              },
+              "cliente":{
+                  "displayName": "Cliente",
+                  "type": {
+                      "text": true
+                  }
+              },
+              "pedido":{
+                  "displayName": "Nº Pedido",
+                  "type": {
+                      "text": true
+                  } 
+              },
+              "entrega":{
+                  "displayName": "Data Entrega",
+                  "type": {
+                      "text": true
+                  }
+              },
+              "ferramenta":{
+                  "displayName": "Ferramenta / Produto",
+                  "type": {
+                      "text": true
+                  }
+              },
+              "PROD": {
+                  "displayName": "PROD",
+                  "type": {
+                      "text": true
+                  }
+              },
+              "EMB": {
+                  "displayName": "EMB",
+                  "type": {
+                      "text": true
+                  }
+              },
+              "REJ": {
+                  "displayName": "REJ",
+                  "type": {
+                      "text": true
+                  }
+              },
+              "SD": {
+                  "displayName": "SD",
+                  "type": {
+                      "text": true
+                  }
+              },
+              "rack": {
+                  "displayName": "Rack",
+                  "type": {
+                      "text": true
+                  }
+              },
+              "producao": {
+                  "displayName": "Produção",
+                  "type": {
+                      "text": true
+                  }
+              },
+              "forno": {
+                  "displayName": "Forno",
+                  "type": {
+                      "text": true
+                  }
+              },
+              "embalagem": {
+                  "displayName": "Embalagem",
+                  "type": {
+                      "text": true
+                  }
+              }
+          }
       }
   }, 
 
